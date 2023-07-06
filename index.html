@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maxim Zhernosek CV</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -15,12 +15,110 @@
           <li class="nav-item"><a href="#">About me</a></li>
           <li class="nav-item"><a href="#">Skills</a></li>
           <li class="nav-item"><a href="#">Expirience</a></li>
-          <li class="nav-item"><a href="#">Projects</a></li>
+          <li class="nav-item"><a href="#">Code</a></li>
           <li class="nav-item"><a href="#">Education</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="content">
+      <div class="left-side">
+        <figure class="center">
+          <img class="photo" src="/img/photo.jpg" alt="photo" />
+        </figure>
+        <section class="contacts">
+          <h2 class="left-side-title">Contacts</h2>
+          <ul class="left-side-list">
+            <li class="left-side-item">Minsk</li>
+            <li class="left-side-item">+375259685300</li>
+            <li class="left-side-item">4elove4iska@gmail.com</li>
+          </ul>
+        </section>
+        <section class="education">
+          <h2 class="left-side-title">Education</h2>
+          <ul class="left-side-list">
+            <li class="left-side-item">
+              Information Technology Engineer 2019-present time, Belarusian
+              State University of Informatics and Radio electronics
+            </li>
+            <li class="left-side-item">
+              Electronics Technician (secondary special) 2017, Grodno State
+              University named Ya.Kupala.
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="right-side">
+        <section class="name">
+          <h1>Maxim Zhernosek</h1>
+          <p class="speciality">Front-End developer</p>
+        </section>
+        <section>
+          <h2 class="right-side-title">About me</h2>
+          <p class="section-info about-me-info">
+            Sociability. Fast learnability, I remember and assimilate new
+            information well, I take a responsible and disciplined attitude to
+            work. A great desire to grow and develop. Ready to practice a lot
+          </p>
+        </section>
+        <section>
+          <h2 class="right-side-title">Skills</h2>
+          <ul class="section-info">
+            <li>Programming language: JavaScript;</li>
+            <li>
+              Technically proficient in different frontend technologies:
+              HTML/CSS/JS advanced stack, React, Redux, redux-toolkit,
+              react-hook-form, styled-components;
+            </li>
+            <li>Backend technologies: basic knowledge Nodejs and Express;</li>
+            <li>DB: MongoDB, postgresql;</li>
+            <li>Source control systems: Git,GitHub.</li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="right-side-title">Expirience</h2>
+          <ul class="section-info">
+            <li>
+              Implementation of interaction with the server API: fetch/axios;
+            </li>
+            <li>Latest ES6+ standards;</li>
+            <li>
+              Development of a web system using relevant technologies, platforms
+              and frameworks;
+            </li>
+            <li>Using CSS Preprocessors (SCSS);</li>
+            <li>Understanding the features of crossbrowth and adaptability;</li>
+            <li>Ability to work with Git version control systems;</li>
+            <li>To work with templates I use: Marcy, Figma;</li>
+            <li>Integrated development environment: VSCode.</li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="right-side-title">Code</h2>
+          <details class="section-info">
+            <summary>From codewars</summary>
+            <pre>
+              <code>
+                function isIsogram(str) { 
+                  const obj = {};
+                  const mass = str.toLowerCase().split("");
+                  for (let i = 0; i <= mass.length - 1; i++) { 
+                    if (!obj.hasOwnProperty(mass[i])) { 
+                      obj[mass[i]] = 0; 
+                    }
+                    obj[mass[i]] += 1; 
+                  } 
+                  for (key in obj) { 
+                    if (obj[key] > 1) { 
+                      return false; 
+                    } 
+                  } return true; 
+                }
+                </code>
+            </pre>
+          </details>
+        </section>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
