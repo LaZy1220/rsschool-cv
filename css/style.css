@@ -12,6 +12,7 @@ body {
   --gray-500: #8f96a3;
   --gray-600: #5e636e;
   --gray-700: #2f3237;
+
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -118,4 +119,24 @@ h1 {
 }
 .about-me-info {
   line-height: 30px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--gray-600);
+  height: 68px;
+}
+.date {
+  font-size: 22px;
+  color: white;
+}
+.git-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
 }
