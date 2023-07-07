@@ -32,11 +32,13 @@ h1 {
   height: 46px;
   background-color: var(--gray-300);
   list-style: none;
+  flex-wrap: wrap;
 }
 .nav-item a {
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
+  flex: 1 0 50%;
 }
 .nav-item a:hover {
   color: #f2c100;
@@ -161,4 +163,65 @@ h1 {
   height: max-content;
   object-fit: contain;
   box-shadow: 1px 0 10px black;
+}
+.right-side-list {
+  padding: 20px 50px;
+  list-style: none;
+}
+.right-side-list li {
+  padding-top: 10px;
+}
+.contacts-mobile {
+  display: none;
+}
+.education-mobile {
+  display: none;
+}
+.mobile-photo {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .my-projects-list {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .section-info {
+    padding: 20px 50px;
+    font-size: 18px;
+  }
+}
+@media screen and (mix-width: 768px) {
+  .nav-item {
+    flex: 1 0 auto;
+  }
+}
+@media screen and (max-width: 560px) {
+  .name {
+    padding: 60px 30px;
+    width: 200px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  .section-info {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content {
+    display: block;
+  }
+  .left-side {
+    display: none;
+  }
+  .contacts-mobile {
+    display: block;
+  }
+  .education-mobile {
+    display: block;
+  }
+  .mobile-photo {
+    display: flex;
+  }
 }
