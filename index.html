@@ -1,10 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Page Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maxim Zhernosek CV</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contacts">Contacts</a></li>
+          <li class="nav-item"><a href="#about-me">About me</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item"><a href="#expirience">Expirience</a></li>
+          <li class="nav-item"><a href="#code">Code</a></li>
+          <li class="nav-item"><a href="#education">Education</a></li>
+          <li class="nav-item"><a href="#my-projects">My projects</a></li>
+        </ul>
+        <ul class="nav-list-mobile">
+          <li class="nav-item"><a href="#contacts-mobile">Contacts</a></li>
+          <li class="nav-item"><a href="#about-me">About me</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item"><a href="#expirience">Expirience</a></li>
+          <li class="nav-item"><a href="#code">Code</a></li>
+          <li class="nav-item"><a href="#education-mobile">Education</a></li>
+          <li class="nav-item"><a href="#my-projects">My projects</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="left-side">
+        <figure class="center">
+          <img class="photo" src="./img/photo.jpg" alt="photo" />
+        </figure>
+        <section class="contacts" id="contacts">
+          <h2 class="left-side-title">Contacts</h2>
+          <ul class="left-side-list">
+            <li class="left-side-item">Minsk</li>
+            <li class="left-side-item">+375259685300</li>
+            <li class="left-side-item">4elove4iska@gmail.com</li>
+          </ul>
+        </section>
+        <section id="education" class="education">
+          <h2 class="left-side-title">Education</h2>
+          <ul class="left-side-list">
+            <li class="left-side-item">
+              Information Technology Engineer 2019-present time, Belarusian
+              State University of Informatics and Radio electronics
+            </li>
+            <li class="left-side-item">
+              Electronics Technician (secondary special) 2017, Grodno State
+              University named Ya.Kupala.
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="right-side">
+        <figure class="center mobile-photo">
+          <img class="photo" src="./img/photo.jpg" alt="photo" />
+        </figure>
+        <section class="name">
+          <h1>Maxim Zhernosek</h1>
+          <p class="speciality">Front-End developer</p>
+        </section>
+        <section id="about-me">
+          <h2 class="right-side-title">About me</h2>
+          <p class="section-info about-me-info">
+            Sociability. Fast learnability, I remember and assimilate new
+            information well, I take a responsible and disciplined attitude to
+            work. A great desire to grow and develop. Ready to practice a lot
+          </p>
+        </section>
+        <section id="contacts-mobile" class="contacts-mobile">
+          <h2 class="right-side-title">Contacts</h2>
+          <ul class="right-side-list">
+            <li>Minsk</li>
+            <li>+375259685300</li>
+            <li>4elove4iska@gmail.com</li>
+          </ul>
+        </section>
+        <section id="education-mobile" class="education-mobile">
+          <h2 class="right-side-title">Education</h2>
+          <ul class="right-side-list">
+            <li>
+              Information Technology Engineer 2019-present time, Belarusian
+              State University of Informatics and Radio electronics
+            </li>
+            <li>
+              Electronics Technician (secondary special) 2017, Grodno State
+              University named Ya.Kupala.
+            </li>
+          </ul>
+        </section>
+        <section id="skills">
+          <h2 class="right-side-title">Skills</h2>
+          <ul class="section-info">
+            <li>Programming language: JavaScript;</li>
+            <li>
+              Technically proficient in different frontend technologies:
+              HTML/CSS/JS advanced stack, React, Redux, redux-toolkit,
+              react-hook-form, styled-components;
+            </li>
+            <li>Backend technologies: basic knowledge Nodejs and Express;</li>
+            <li>DB: MongoDB, postgresql;</li>
+            <li>Source control systems: Git,GitHub.</li>
+            <li>English - A2</li>
+          </ul>
+        </section>
+        <section id="expirience">
+          <h2 class="right-side-title">Expirience</h2>
+          <ul class="section-info">
+            <li>
+              Implementation of interaction with the server API: fetch/axios;
+            </li>
+            <li>Latest ES6+ standards;</li>
+            <li>
+              Development of a web system using relevant technologies, platforms
+              and frameworks;
+            </li>
+            <li>Using CSS Preprocessors (SCSS);</li>
+            <li>Understanding the features of crossbrowth and adaptability;</li>
+            <li>Ability to work with Git version control systems;</li>
+            <li>To work with templates I use: Marcy, Figma;</li>
+            <li>Integrated development environment: VSCode.</li>
+          </ul>
+        </section>
+        <section id="code">
+          <h2 class="right-side-title">Code</h2>
+          <details class="section-info">
+            <summary>From codewars</summary>
+            <pre>
+              <code class="code">
+function isIsogram(str) { 
+ const obj = {};
+ const mass = str.toLowerCase().split("");
+ for (let i = 0; i &lt;= mass.length - 1; i++) { 
+  if (!obj.hasOwnProperty(mass[i])) { 
+   obj[mass[i]] = 0; 
+  }
+  obj[mass[i]] += 1; 
+ } 
+ for (key in obj) { 
+  if (obj[key] > 1) { 
+   return false; 
+  } 
+ } return true; 
+}
+                </code>
+            </pre>
+          </details>
+        </section>
+        <section id="my-projects">
+          <h2 class="right-side-title">My projects</h2>
+          <ul class="section-info my-projects-list">
+            <li class="my-projects-item">
+              <a href="https://github.com/LaZy1220/git-search-project">
+                <img
+                  class="project-img"
+                  src="./img/git-project.jpg"
+                  alt="project"
+                />
+                <h3>Git search</h3>
+              </a>
+            </li>
+            <li class="my-projects-item">
+              <a href="https://github.com/LaZy1220/pomodoro-timer-project">
+                <img class="project-img" src="./img/timer.jpg" alt="timer" />
+                <h3>Pomodoro timer</h3>
+              </a>
+            </li>
+            <li class="my-projects-item">
+              <a href="https://github.com/LaZy1220/paralect-test">
+                <img class="project-img" src="./img/job.jpg" alt="job" />
+                <h3>Search job</h3>
+              </a>
+            </li>
+            <li class="my-projects-item">
+              <a href="https://ntsmart.ru/">
+                <img
+                  class="project-img"
+                  src="./img/landing.jpg"
+                  alt="landing"
+                />
+                <h3>Landing</h3>
+              </a>
+            </li>
+            <li class="my-projects-item">
+              <a href="https://github.com/LaZy1220/shop-project">
+                <img class="project-img" src="./img/shop.jpg" alt="shop" />
+                <h3>Shop</h3>
+              </a>
+            </li>
+            <li class="my-projects-item">
+              <a href="https://github.com/LaZy1220/todo-list">
+                <img class="project-img" src="./img/todo.jpg" alt="todo" />
+                <h3>Todo list</h3>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="https://github.com/LaZy1220/" class="git-link">
+        <img src="./img/github-logo.svg" alt="git-logo" />
+        My GitHub
+      </a>
+      <p class="date">2023</p>
+      <a href="https://rs.school/js/">
+        <img
+          src="./img/rs_school_js.svg"
+          alt="rs-logo"
+          width="86"
+          height="32"
+        />
+      </a>
+    </footer>
   </body>
 </html>
