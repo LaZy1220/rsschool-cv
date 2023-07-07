@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+body {
+  --yellow: #f2c100;
+  --gray-100: #f8f9fc;
+  --gray-200: #f1f3f9;
+  --gray-300: #dee3ed;
+  --gray-400: #c2c9d6;
+  --gray-500: #8f96a3;
+  --gray-600: #5e636e;
+  --gray-700: #2f3237;
+
+  max-width: 1280px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 52px;
+}
+.content {
+  display: flex;
+}
+.speciality {
+  font-size: 22px;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 46px;
+  background-color: var(--gray-300);
+  list-style: none;
+  flex-wrap: wrap;
+}
+.nav-item a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  flex: 1 0 50%;
+}
+.nav-item a:hover {
+  color: #f2c100;
+}
+.photo {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px var(--gray-400);
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.left-side {
+  width: 400px;
+  background-color: #5e636e;
+}
+.left-side-title {
+  padding: 8px 0 8px 0;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background-color: var(--gray-400);
+  position: relative;
+}
+
+.left-side-list {
+  padding: 0 30px 0 30px;
+  list-style: none;
+}
+.left-side-item {
+  color: white;
+  font-size: 16px;
+  padding-top: 10px;
+}
+.contacts {
+  padding-top: 40px;
+}
+.education {
+  padding-top: 40px;
+}
+.right-side {
+  width: 100%;
+}
+.name {
+  padding: 120px 60px;
+  width: 200px;
+}
+.right-side-title {
+  padding: 8px 0 8px 0;
+  color: white;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding-left: 50px;
+  background-color: var(--gray-700);
+  position: relative;
+}
+.right-side-title::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 43.5px;
+  background-color: #f2c100;
+}
+.section-info {
+  padding: 50px 100px;
+  font-size: 18px;
+}
+.section-info li {
+  padding: 10px 0 0 10px;
+}
+.about-me-info {
+  line-height: 30px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--gray-500);
+  height: 68px;
+}
+.date {
+  font-size: 22px;
+  color: black;
+  font-weight: 600;
+}
+.git-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 130px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+.my-projects-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+.my-projects-item {
+  padding-top: 50px !important;
+}
+.my-projects-item a h3 {
+  padding-top: 10px;
+}
+.my-projects-item a {
+  text-decoration: none;
+}
+.project-img {
+  width: 100%;
+  height: max-content;
+  object-fit: contain;
+  box-shadow: 1px 0 10px black;
+}
+.right-side-list {
+  padding: 20px 50px;
+  list-style: none;
+}
+.right-side-list li {
+  padding-top: 10px;
+}
+.contacts-mobile {
+  display: none;
+}
+.education-mobile {
+  display: none;
+}
+.mobile-photo {
+  display: none;
+}
+.nav-list-mobile {
+  display: none;
+}
+.code {
+  font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+  .my-projects-list {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .section-info {
+    padding: 20px 50px;
+    font-size: 18px;
+  }
+}
+@media screen and (mix-width: 768px) {
+  .nav-item {
+    flex: 1 0 auto;
+  }
+}
+@media screen and (max-width: 560px) {
+  .name {
+    padding: 60px 30px;
+    width: 200px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  .section-info {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content {
+    display: block;
+  }
+  .left-side {
+    display: none;
+  }
+  .contacts-mobile {
+    display: block;
+  }
+  .education-mobile {
+    display: block;
+  }
+  .mobile-photo {
+    display: flex;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-list-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 46px;
+    background-color: var(--gray-300);
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  .code {
+    font-size: 10px;
+  }
+}
