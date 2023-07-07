@@ -56,7 +56,6 @@ h1 {
 .left-side {
   width: 400px;
   background-color: #5e636e;
-  height: 100%;
 }
 .left-side-title {
   padding: 8px 0 8px 0;
@@ -124,19 +123,42 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--gray-600);
+  background-color: var(--gray-500);
   height: 68px;
 }
 .date {
   font-size: 22px;
-  color: white;
+  color: black;
+  font-weight: 600;
 }
 .git-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 120px;
+  width: 130px;
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 18px;
+  font-weight: 600;
+}
+.my-projects-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+.my-projects-item {
+  padding-top: 50px !important;
+}
+.my-projects-item a h3 {
+  padding-top: 10px;
+}
+.my-projects-item a {
+  text-decoration: none;
+}
+.project-img {
+  width: 100%;
+  height: max-content;
+  object-fit: contain;
+  box-shadow: 1px 0 10px black;
 }
