@@ -180,6 +180,9 @@ h1 {
 .mobile-photo {
   display: none;
 }
+.nav-list-mobile {
+  display: none;
+}
 @media (max-width: 1000px) {
   .my-projects-list {
     grid-template-columns: 1fr;
@@ -223,5 +226,17 @@ h1 {
   }
   .mobile-photo {
     display: flex;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-list-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 46px;
+    background-color: var(--gray-300);
+    list-style: none;
+    flex-wrap: wrap;
   }
 }
