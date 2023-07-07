@@ -132,22 +132,22 @@
           <details class="section-info">
             <summary>From codewars</summary>
             <pre>
-              <code >
-                function isIsogram(str) { 
-                  const obj = {};
-                  const mass = str.toLowerCase().split("");
-                  for (let i = 0; i &lt;= mass.length - 1; i++) { 
-                    if (!obj.hasOwnProperty(mass[i])) { 
-                      obj[mass[i]] = 0; 
-                    }
-                    obj[mass[i]] += 1; 
-                  } 
-                  for (key in obj) { 
-                    if (obj[key] > 1) { 
-                      return false; 
-                    } 
-                  } return true; 
-                }
+              <code class="code">
+function isIsogram(str) { 
+ const obj = {};
+ const mass = str.toLowerCase().split("");
+ for (let i = 0; i &lt;= mass.length - 1; i++) { 
+  if (!obj.hasOwnProperty(mass[i])) { 
+   obj[mass[i]] = 0; 
+  }
+  obj[mass[i]] += 1; 
+ } 
+ for (key in obj) { 
+  if (obj[key] > 1) { 
+   return false; 
+  } 
+ } return true; 
+}
                 </code>
             </pre>
           </details>

@@ -183,6 +183,10 @@ h1 {
 .nav-list-mobile {
   display: none;
 }
+.code {
+  font-size: 14px;
+}
+
 @media (max-width: 1000px) {
   .my-projects-list {
     grid-template-columns: 1fr;
@@ -238,5 +242,8 @@ h1 {
     background-color: var(--gray-300);
     list-style: none;
     flex-wrap: wrap;
+  }
+  .code {
+    font-size: 10px;
   }
 }
